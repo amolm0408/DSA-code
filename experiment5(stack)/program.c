@@ -49,12 +49,12 @@ int main() {
 
 	st.top = -1;
 
-	printf("\n \t implrmrnt of stack");
+	printf("\n\tImplementation of stack");
 
 	do {
-		printf("\n Main menu");
-		printf("\n pushn\n2.pop\n3.display\n4.exit");
-		printf("\n enter your choice:");
+		printf("\nMain menu");
+		printf("\n1.push\n2.pop\n3.display\n4.exit");
+		printf("\nEnter your choice:");
 		scanf("%d", &choice);
 
 		switch(choice) {
@@ -88,7 +88,7 @@ int main() {
 			printf("\nInvalid choice!");
 		}
 
-		printf("\n\nDo you want to continue? (Y/N): ");
+		printf("\nDo you want to continue? (Y/N): ");
 		scanf(" %c", &ans);
 
 	}
