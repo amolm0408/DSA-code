@@ -19,7 +19,7 @@ int main(void)
     char exp[size];
     double result;
 
-    printf("Enter any postfix expression: ");
+    printf("\nEnter any postfix expression: ");
     scanf("%s", exp);
 
     result = post(exp);
