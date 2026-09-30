@@ -36,7 +36,7 @@ int stempty() {
 void displaystack() {
 	int i;
 	if(stempty())
-		printf("\n the stackis empty");
+		printf("\n The stack is empty");
 	else
 		for(i = st.top; i>=0; i--) {
 			printf("\n %d", st.s[i]);
@@ -62,17 +62,17 @@ int main() {
 			printf("Enter the item to be pushed:");
 			scanf("%d", &item);
 			if(stfull())
-				printf("\n stack is full");
+				printf("\n The stack is full");
 			else
 				push(item);
 			break;
 
 		case 2:
 			if(stempty())
-				printf("\n empty stack");
+				printf("\n Empty stack");
 			else {
 				item = pop();
-				printf("\n the popped element is %d", item);
+				printf("\n The popped element is %d", item);
 			}
 			break;
 
