@@ -49,7 +49,7 @@ int main() {
 
 	st.top = -1;
 
-	printf("\n----Implementation of stack----");
+	printf("----Implementation of stack----");
 
 	do {
 		printf("\nMain menu");
