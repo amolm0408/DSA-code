@@ -11,10 +11,10 @@ struct stack
 } st;
 
 void push(double val);
-double pop(void);
+double pop();
 double post(char exp[]);
 
-int main(void)
+int main()
 {
     char exp[size];
     double result;
@@ -46,8 +46,7 @@ double post(char exp[])
             val = ch - '0';
             push(val);
         }
-        else if (ch == '+' || ch == '-' || ch == '*' ||
-                 ch == '/' || ch == '^')
+        else if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^')
         {
             if (st.top < 1)
             {
@@ -118,7 +117,7 @@ void push(double val)
     st.s[st.top] = val;
 }
 
-double pop(void)
+double pop()
 {
     double val;
 
