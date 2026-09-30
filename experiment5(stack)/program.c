@@ -53,7 +53,7 @@ int main() {
 
 	do {
 		printf("\nMain menu");
-		printf("\n1.push\n2.pop\n3.display\n4.exit");
+		printf("\n1.push\n2.pop\n3.display");
 		printf("\nEnter your choice: ");
 		scanf("%d", &choice);
 
@@ -78,10 +78,6 @@ int main() {
 
 		case 3:
 			displaystack();
-			break;
-
-		case 4:
-			printf("\nExiting program...");
 			break;
 
 		default:
